@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block aboutcontent %}
+	<div class="row">
+		<div class="col-md-6">
+			<img src="{{ url_for('static', filename='saig.png') }}" alt="logo" style="width:50%;" class="thumbnail">
+			<h2 style="color:#4d4d4d;">LEGACY</h2>
+			<p style="color:#fff;">
+				The vision of amalgamating years of experience garnered on the battle fields, combating various forces of threat, including terrorism, and a view to combine the capability of Military Grade De-Risking with the resourcefulness and creativity of the private sector led to the foundation of “Specialist Advisory & Intervention Group (SAIG).” Specialist Advisory & Intervention Group's (SAIG) risk and strategic consulting capability has enabled leading multinational corporations, high net worth individuals, law firms protect their people, process, technology and reputation.
+			</p>
+			<h2 style="color:#4d4d4d;">Why Us?</h2>
+			<p style="color:#fff;">
+				At Specialist Advisory & Intervention Group (SAIG) we see ourselves as our clients' confidants, and strongly believe that we can achieve our goal only through complete co-operation, transparency and trust of our clients'. In support of this, SAIG has consistently been instrumental in providing highly specialized risk and strategic consultancy services along with cyber risk mitigation strategies by providing cyber and investigative intelligence to both National as well as International clients with an unmatched level of quality and professionalism. 
+			</p>
+			<h2 style="color:#4d4d4d;">Objective</h2>
+			<p style="color:#fff;">
+				Specialist Advisory & Intervention Group (SAIG) specialises in a variety of risk and strategic consulting services using creative intelligence and investigative techniques, bolstered with solid technical acuity to tackle complex situations. SAIG is conscious that security is an important and vital element of any business, however its integration must be seamless and without disruption to normal business practices. Therefore, our objective is to mitigate risks and threats with viable and practical solutions; with a focus on ‘Minimal Impact’ to the client organization.
+			</p>
+			<br>
+			<div style="padding:10px; border:1px solid #fff;">
+				<h4 style="" class="alert alert-warning">
+					Our newest frontier:
+					<br>
+					<span style="font-size:14px;">Artificial Intelligence powered Advanced Surveillance System</span>
+				</h4>
+				<img src="{{ url_for('static', filename='ai-image.jpg') }}" alt="AI" style="width:100%;">
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h2 style="color:#fff;">Capt. Albert Louis</h2>
+			<h4 style="color:#fff;">Founder and CEO</h4>
+			<img src="{{ url_for('static', filename='ceo.jpg') }}" alt="ceo" style="width:50%; ">
+			<p style="font-size:14px; color:#000; background-color:#fff; padding:20px; border-radius:5px; font-weight:normal;">
+				Capt Albert Louis is a seasoned Risk Management professional with Years of experience.<br> 
+				Served in the most elite Special Forces Battalion of the Indian Army and an alumni of Indian Institute of Management, Lucknow.<br> 
+				During his professional life he has held various portfolios including Asset Protection Director/Branch Chief/ Officer Commanding /Executive Officer/Operations Officer/Logistics Officer/Safety Director.
+			</p>
+			<ul style="font-size:14px; color:#cccccc;">
+				<li>
+					During his military service he has served in active combat operational duty with the elite Indian Army - 9 PARA (Special Forces), Indian Army Corps Of Signals, Army Aero Nodal Centre, United Nation Peace Keeping Force.
+				</li>
+				<li>
+					Actively served in mandated High Risk Special Operation Missions such as Direct action, Hostage rescue, Counter-terrorist, Unconventional warfare, Special reconnaissance, Foreign Internal Defence, Personnel recovery, Asymmetric warfare, Electronic Warfare, Counter proliferation during hostility. 
+				</li>
+				<li>
+					On United Nations (UNMEE) mission, he served as a Troop Commander of a Quick Reaction Team directly under the Force Commander of the Mission of United Nations Mission in Ethiopia and Eritrea.
+				</li> 
+				<li>
+					During the 26/11 Mumbai Terror Attacks (2008) he was in the forefront on "Ground Zero" rescuing people trapped at Hotel Trident, by effective co-ordination and liaison with Army & Law Enforcement Agencies.
+				</li> 
+				<li>
+					When one of the worst Industrial Disaster in Korba, Chattisgarh (2009) occurred, he headed a Team that was on "Ground Zero" on behest of the management, working round the clock coordinating the rescue effort with a multitude of agencies both state and central under extreme hostile circumstances and conditions resulting in a speedy recovery of the people trapped under the rubbles.
+				</li>
+				<li>
+					He headed the threat assessment operation in troubled states like Jammu & Kashmir for “Rattle Project” commissioned under the Prime Minister’s Office for Hydel power generation of 50,000 MW.
+				</li>
+				<li>
+					Fast-track career promotion through a series of increasingly responsible management positions leading large-scale operations in INDIA and abroad. Honored with numerous commendations and awards for outstanding leadership, asset protection, general management, and field operations.
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	<div id="demo" class="carousel slide" data-ride="carousel" style="margin-top:50px;">
+
+	  <!-- Indicators -->
+	  <ul class="carousel-indicators">
+	    <li data-target="#demo" data-slide-to="0" class="active"></li>
+	    <li data-target="#demo" data-slide-to="1"></li>
+	    <li data-target="#demo" data-slide-to="2"></li>
+	  </ul>
+
+	  <!-- The slideshow -->
+	  <div class="carousel-inner" style="text-align:center;">
+	    <div class="carousel-item active">
+	      	<img src="{{ url_for('static', filename='people.jpg') }}" alt="people">
+	      	<div class="carousel-caption">
+	    		<h3>People</h3>
+	    		<p>Combining the capability of military grade de-risking with the resourcefulness & creativity of the private sector to organizational challenges and implement strategies that are intelligence driven with precision to serve our clients' better by streamlining and improving the safety and security of their employees.</p>
+	  		</div>
+	    </div>
+	    <div class="carousel-item">
+	      	<img src="{{ url_for('static', filename='process.jpg') }}" alt="process">
+	      	<div class="carousel-caption">
+	      		<h3>Process</h3>
+	      		<p>Providing our clients' with the desired support to convincingly enhance the edge of existing processes and protocols while maintaining the highest level of integrity of organisational values, ethos and business interests.</p>
+	  		</div>
+	    </div>
+	    <div class="carousel-item">
+	      	<img src="{{ url_for('static', filename='tech.jpg') }}" alt="technology">
+	      	<div class="carousel-caption">
+	      		<h3>Technology</h3>
+	      		<p>Providing our clients' with the desired support to convincingly enhance the edge of existing processes and protocols while maintaining the highest level of integrity of organisational values, ethos and business interests.</p>
+	  		</div>
+	    </div>
+	  </div>
+
+	  <!-- Left and right controls -->
+	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+	    <span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#demo" data-slide="next">
+	    <span class="carousel-control-next-icon"></span>
+	  </a>
+
+</div>
+	<hr>
+	<footer style="padding:10px; font-size:12px; color:#cccccc; margin-top:100px;">
+		© 2018 SPECIALIST ADVISORY INTERVENTION GROUP
+	</footer>
+{% endblock aboutcontent %}

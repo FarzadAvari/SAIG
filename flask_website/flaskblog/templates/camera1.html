@@ -1,0 +1,56 @@
+{% extends "layout_in.html" %}
+{% block content %}
+	<div class="content-section" style="background-color:#fff; padding:10px;">
+		<div class="media">
+			<div style="width:50%; max-height:200px;">
+				<img class="account-img" src="{{ image_file }}" alt="image" style="width:100%;">
+			</div>
+			<div class="media-body" style="padding:10px;">
+				<h2 class="account-heading">{{ current_user.username }}</h2>
+				<p class="text-secondary">{{ current_user.email }}</p>
+			</div>	
+		</div>
+	</div>
+	<div class="content-section" style="background-color:#fff; padding:20px; margin-top:20px; border-radius:10px; text-align:center;">
+		<div class="">
+			<div>
+				<div style="padding:10px; border:1px solid #f2f2f2;"> 
+					<a href="{{ video1 }}" class="btn btn-outline-info btn-sm btn-block">Camera 1</a>
+					<hr>
+					<span>NMIMS Department of 6 students</span>
+				</div>
+				<div style="padding:10px; border:1px solid #f2f2f2; margin-top:5px;">
+					<a href="{{ video2 }}" class="btn btn-outline-info btn-sm btn-block">Camera 2</a>
+					<hr>
+					<span>Reception</span>
+				</div>
+				<div style="padding:10px; border:1px solid #f2f2f2; margin-top:5px;">
+					<a href="{{ video3 }}" class="btn btn-outline-info btn-sm btn-block">Camera 3</a>
+					<hr>
+					<span>Frontal yard</span>
+				</div>
+				<div style="padding:10px; border:1px solid #f2f2f2; margin-top:5px;">
+					<a href="{{ video4 }}" class="btn btn-outline-info btn-sm btn-block">Camera 4</a>
+					<hr>
+					<span>Backyard</span>
+				</div>
+				<div style="padding:10px; border:1px solid #f2f2f2; margin-top:5px;">
+					<a href="{{ video5 }}" class="btn btn-outline-info btn-sm btn-block">Camera 5</a>
+					<hr>
+					<span>Office</span>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock content %}
+
+{% block videocontent %}
+	<div class="content-section" style="background-color:#fff; padding:10px;">
+		<div class="text-center">
+			<h2>Specialist Advisory & Interventions Group</h2>
+			<h5>Advanced Surveillance System</h5>
+			<img src="{{ url_for('video_feed') }}" width="100%;">
+		</div>		
+	</div>
+{% endblock videocontent %}
+

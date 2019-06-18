@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="content-section" style="margin-top:100px;">
+		<div class="row" style="background-color:#f2f2f2;">
+			<div class="col-md-4" style="margin:0 auto; margin-top:100px;">
+				<img src="{{ url_for('static', filename='saig.png') }}" style="width:100%; max-height:500px;">
+			</div>
+			<div class="col-md-8" style="background-color:#000; color:#666666;">
+				<h5 style="padding:5px;">Specialist Advisory & Interventions Group</h5>
+				<h6 style="padding:5px;"><a href="{{ url_for('about') }}" style="font-size:12px; color:#e6ac00;">About Us</a> | <a href="{{ url_for('about') }}" style="font-size:12px; color:#e6ac00;">Contact Us</a></h6>
+			</div>
+		</div>
+		<form method="POST" action="" class="" style="margin-top:25px; background-color:transparent; padding:10px; color:#000; border-radius:4px;">
+			{{ form.hidden_tag() }}
+			<fieldset class="form-group">
+<!-- 				<legend class="border-bottom mb-4">Login</legend>
+ -->			<div class="form-group">
+					<!-- {{ form.email.label(class="form-control-label") }} -->
+					{% if form.email.errors %}
+						{{ form.email(class="is-invalid", placeholder="email", style="width:100%; padding:5px; border:1px solid transparent; background-color:#000; color:#fff; border-bottom:1px solid #4d4d4d;") }}
+						<div class="invalid-feedback">
+							{% for error in form.email.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+						</div>
+					{% else %}
+						{{ form.email(class="", placeholder="email", style="width:100%; padding:5px; border:1px solid transparent; background-color:#000; color:#fff; border-bottom:1px solid #4d4d4d;") }}
+					{% endif %}
+				</div>
+				<div class="form-group">
+					<!-- {{ form.password.label(class="form-control-label") }} -->
+					{% if form.password.errors %}
+						{{ form.password(class="is-invalid", placeholder="password", style="width:100%; padding:5px; border:1px solid transparent; background-color:#000; color:#fff; border-bottom:1px solid #4d4d4d;") }}
+						<div class="invalid-feedback">
+							{% for error in form.password.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+						</div>
+					{% else %}
+						{{ form.password(class="", placeholder="password", style="width:100%; padding:5px; border:1px solid transparent; background-color:#000; color:#fff; border-bottom:1px solid #4d4d4d;") }}
+					{% endif %}
+					<a href="#" class="float-right" style="font-size:14px;">Forgot Password?</a>
+				</div>
+				<div class="form-check">
+					{{ form.remember(class="form-check-input") }}
+					{{ form.remember.label(class="form-check-label", style="color:#fff; font-size:12px;") }}
+				</div>
+			</fieldset>
+			<div class="form-group">
+				{{ form.submit(class="btn btn-primary btn-block") }}
+			</div>
+			<!-- <small class="text-muted ml-2">
+				<a href="#">Forgot Password?</a>
+			</small> -->
+		</form>
+	</div>
+	<!-- <div class="border-top pt-3">
+		<small class="text-muted">
+			Need an account? <a class="ml-2" href="{{ url_for('register') }}">Sign Up Now</a>
+		</small>
+	</div> -->
+{% endblock content %}
